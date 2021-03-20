@@ -47,25 +47,15 @@ int main(int argc, char** argv) {
     for(int month=0;month<MONTHS;month++){
         for(int day=0;day<DAYS;day++){
             in>>weather;
-            switch(weather){
-                case 'R': {
-                // increment the  rainy record of that month
-                    rainy[month]++;
-                    break;
-                }case 'C': {
-                // increment the cloudy record of that month
-                    cloudy[month]++;
-                    break; 
-                }case 'S': {
-                // increment the  sunny record of that month
-                    sunny[month]++;
-                    break;
-                }
-                // Store the data.
-                data[month][day]=weather;    
-            }
+            data[month][day]=(weather=='R'?rainy[month]++:
+                              weather=='C'?cloudy[month]++:
+                              weather=='S'?sunny[month]++:'\0');
+                
+                    
         }
     }
+    
+    
     
     for(int month=0;month<MONTHS;month++){
         mnthNme=(month==0?"June    ":
