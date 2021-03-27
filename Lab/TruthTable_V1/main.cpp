@@ -27,11 +27,12 @@ int main(int argc, char** argv) {
     cout<<"X Y !X !Y X&&Y X||Y X^Y X^Y^X X^Y^Y"  //Logical operator header row
           " !(X&&Y) !X||!Y  !(X||Y) !X&&!Y"<<endl;
     
-    //1st Row of the Truth Table
-    
+   
+   //Iterate loop while there is input for x and y 
    while ((cin>>x)&&(cin>>y)) {
-       
-       if ((x==0||x==1)&&(y==0||y==1)) {
+        //I don't like having to type in \0 in netbeans to end loop
+        //Test for x and y input being 0 or 1
+        if ((x==0||x==1)&&(y==0||y==1)) {
             //1==true   0==false
             cout<<(x?'T':'F')<<" ";          
             //Is y true?
@@ -59,10 +60,10 @@ int main(int argc, char** argv) {
             //Is x not true and is y not true?
             cout<<(!x&&!y?'T':'F')<<"";
             cout<<endl;
-       }
-       else {
-           x='\0';
-       }
+        //If input for either x or y is not 1 or 0, reassign x='\0', ending the loop in NetBeans
+        }else {
+            x='\0';
+        }
    }
    cout<<endl;
    
