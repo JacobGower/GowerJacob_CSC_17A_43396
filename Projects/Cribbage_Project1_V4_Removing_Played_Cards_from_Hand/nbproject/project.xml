@@ -3,9 +3,9 @@
     <type>org.netbeans.modules.cnd.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>MarkSort_Structure</name>
-            <c-extensions/>
-            <cpp-extensions>cpp</cpp-extensions>
+            <name>Cribbage_Project1_V4_Removing_Played_Cards_from_Hand</name>
+            <c-extensions>cpp</c-extensions>
+            <cpp-extensions/>
             <header-extensions/>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
